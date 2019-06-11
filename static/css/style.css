@@ -1,0 +1,13 @@
+body{
+    margin-left: 120px;
+    margin-top: 20px;
+    font-family: Helvetica, "游ゴシック Medium", YuGothic, YuGothicM;
+}
+
+pre {
+    font-family: Hack
+}
+
+main {
+    width: 650px;
+}
