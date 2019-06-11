@@ -1,12 +1,12 @@
 name = "Blank"
 license = "MIT"
-licenselink = "https://github.com/vimux/blank/blob/master/LICENSE.md"
-description = "Starter Hugo theme for developers."
-homepage = "https://github.com/vimux/blank/"
+licenselink = "https://github.com/yasushisakai/blank/blob/master/LICENSE.md"
+description = "hugo theme for yasushisakai.com"
+homepage = "https://github.com/yasushisakai/blank/"
 tags = ["blog", "plain", "blank", "starter"]
 features = ["blog"]
 min_version = 0.19
 
 [author]
-  name = "Vimux"
-  homepage = "https://github.com/vimux"
+  name = "yasushisakai"
+  homepage = "https://yasushisakai.com/"
