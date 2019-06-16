@@ -5,9 +5,18 @@ body{
 }
 
 pre {
-    font-family: Hack
+    font-family: Hack;
+}
+
+.title-ascii {
+    margin-bottom: 100px;
 }
 
 main {
     width: 650px;
+}
+
+
+article {
+    margin-bottom: 50px;
 }

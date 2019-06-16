@@ -2,7 +2,7 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
+			<time>{{ .Date.Format "2006-03-11" }}</time>
 			<div>
 				{{ .Content }}
 			</div>
@@ -16,6 +16,8 @@
 			<div>
 				{{ template "_internal/disqus.html" . }}
 			</div>
+			<div id="commento"></div>
+			<script src="https://cdn.commento.io/js/commento.js"></script>
 		</article>
 	</main>
 {{ partial "sidebar.html" . }}
