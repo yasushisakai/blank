@@ -1,12 +1,17 @@
 body{
-    margin-left: 120px;
-    margin-top: 20px;
+    margin-left: 2%;
+    margin-top: 10px;
     font-family: Helvetica, "游ゴシック Medium", YuGothic, YuGothicM;
 }
 
-@media only screen and (min-width: 600px) {
+img{
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
     body{
-        margin: 2px, 10px;
+        margin-left: 120px;
+        margin-top: 20px;
     }
 }
 
@@ -16,6 +21,7 @@ pre {
 
 main {
     width: 650px;
+    max-width: 100%;
 }
 
 
