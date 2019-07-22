@@ -1,11 +1,11 @@
 {{ partial "header.html" . }}
-<article>
+<article class="list">
 	<header>
 		<h1>{{ .Title }}</h1>
 		</header>
 </article>
 
-<main>
+<main class="list-items">
 	<ul style="list-style-type: none; margin-bottom: 2em;">
 	{{ range .Pages }}
 		{{ partial "summary-simple.html" . }}

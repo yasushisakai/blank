@@ -28,11 +28,15 @@
 </head>
 <body>
 	<header>
-		<a href="{{ .Site.BaseURL }}">home</a> |
-		<a href="{{ .Site.BaseURL }}/about/me">about me</a> |
-		<a href="{{ .Site.BaseURL }}/projects">projects</a> |
-		<a href="https://show.yasushisakai.com/">presentations</a> |
+		{{ if not .IsHome -}}
+		<a href="{{ .Site.BaseURL }}"><i class="fa fa-home" aria-hidden="true"></i></a> |
+		{{- end}}
+		<a href="{{ .Site.BaseURL }}/about/me">cv</a> |
+		<a href="{{ .Site.BaseURL }}/projects">works</a> |
+		<a href="https://show.yasushisakai.com/">show & tell</a> |
+		{{ if .RSSLink -}}
 		<a href="{{ .RSSLink }}"><i class="fa fa-rss-square" aria-hidden="true"></i></a> |
+		{{- end}}
 		<a href="https://github.com/yasushisakai"> <i class="fa fa-github" aria-hidden="true"></i></a>
 		<nav>
 			<ul>
