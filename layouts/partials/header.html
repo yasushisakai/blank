@@ -11,6 +11,18 @@
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">
 	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37457516-1"></script>
+
+	<script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'UA-37457516-1');
+	</script>
+
 	{{ .Hugo.Generator }}
 </head>
 <body>
