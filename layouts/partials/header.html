@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.min.css">
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">
+	<script src="https://use.fontawesome.com/dafc56c93a.js"></script>
 	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -30,7 +31,9 @@
 		<a href="{{ .Site.BaseURL }}">home</a> |
 		<a href="{{ .Site.BaseURL }}/about/me">about me</a> |
 		<a href="{{ .Site.BaseURL }}/projects">projects</a> |
-		<a href="https://show.yasushisakai.com/">presentations</a>
+		<a href="https://show.yasushisakai.com/">presentations</a> |
+		<a href="{{ .RSSLink }}"><i class="fa fa-rss-square" aria-hidden="true"></i></a> |
+		<a href="https://github.com/yasushisakai"> <i class="fa fa-github" aria-hidden="true"></i> </a>
 		<nav>
 			<ul>
 				{{ range .Site.Menus.main }}
