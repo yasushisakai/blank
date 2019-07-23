@@ -1,8 +1,14 @@
 {{ partial "header.html" . }}
 
-<img src="https://www.dropbox.com/s/di4nhsx6lfdggco/cheese.jpg?raw=1">
-
 	<main>
+		<img id="image-top" alt="top-image" src="https://www.dropbox.com/s/di4nhsx6lfdggco/cheese.jpg?raw=1" width="100%">
+
+		<div id="search-box">
+			<script async src="https://cse.google.com/cse.js?cx=003786064459657478030:scs7yvswntc"></script>
+			<div class="gcse-searchbox"></div>
+		</div>
+
+		<div class="gcse-searchresults"></div>
 		{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
 			{{ partial "summary.html" . }}
