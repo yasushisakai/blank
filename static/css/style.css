@@ -27,7 +27,7 @@ pre {
 main {
     width: 650px;
     max-width: 100%;
-    margin-bottom: 3em;
+    margin: 3em auto;
 }
 
 article {
@@ -53,4 +53,11 @@ h2 {
 
 time {
     font-size: 0.8em;
+}
+
+.content table, .content td, .content th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 7px;
+    margin: 30px auto;
 }

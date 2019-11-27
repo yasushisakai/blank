@@ -8,8 +8,7 @@
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.min.css">
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">
+
 	<script src="https://use.fontawesome.com/dafc56c93a.js"></script>
 	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
 
@@ -25,6 +24,8 @@
 	</script>
 
 	{{ .Hugo.Generator }}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">
 </head>
 <body>
 	<header>
