@@ -61,3 +61,8 @@ time {
     padding: 7px;
     margin: 30px auto;
 }
+
+header {
+    width: 650px;
+    margin: auto;
+}
