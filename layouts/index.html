@@ -1,20 +1,16 @@
 {{ partial "header.html" . }}
 
 	<main>
-		<img id="image-top" alt="top-image" src="https://memo.yasushisakai.com/ox-hugo/cheese.jpg" width="100%">
-
-
+		<!-- <img id="image-top" alt="top-image" src="https://memo.yasushisakai.com/ox-hugo/cheese.jpg" width="100%"> -->
 		<div id="search-box">
 			<script async src="https://cse.google.com/cse.js?cx=003786064459657478030:scs7yvswntc"></script>
-
-
 			<div class="gcse-searchbox"></div>
 		</div>
 
 		<div class="gcse-searchresults"></div>
-		{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+		{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 50 }}
 		{{ range $paginator.Pages }}
-			{{ partial "summary.html" . }}
+			{{ partial "summary-simple.html" . }}
 		{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>

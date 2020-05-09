@@ -1,6 +1,8 @@
 {{ partial "header.html" . }}
 	<main>
 		<article class="single-post">
+			<h1>{{.Title}}</h1>
+			<time>{{ .Date.Format "2006/01/02 15:04" }}</time>
 			<div class="content">
 				{{ .Content }}
 			</div>
@@ -10,10 +12,6 @@
 					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
 					{{ end }}
 				</ul>
-			</div>
-			<time>{{ .Date.Format "2006-01-02" }}</time>
-			<div>
-				{{ template "_internal/disqus.html" . }}
 			</div>
 		</article>
 	</main>

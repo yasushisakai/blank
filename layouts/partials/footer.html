@@ -1,5 +1,22 @@
 	<footer>
-		<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}"> Yasushi Sakai</a></p>
+		<a href="{{ .Site.BaseURL }}memo/me">cv</a> |
+		<a href="{{ .Site.BaseURL }}memo/projects">works</a> |
+		<a href="https://show.yasushisakai.com/">show & tell</a> |
+		{{ if .RSSLink -}}
+		<a href="{{ .RSSLink }}"><i class="fa fa-rss-square" aria-hidden="true"></i></a> |
+		{{- end}}
+		<a href="https://github.com/yasushisakai"> <i class="fa fa-github" aria-hidden="true"></i></a> |
+		<a href="https://soundcloud.com/ysshski"> <i class="fa fa-soundcloud" aria-hidden="true"></i> </a>
+		| &copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}"> Yasushi Sakai</a>
+		<nav>
+			<ul>
+				{{ range .Site.Menus.main }}
+				<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+				{{ end }}
+			</ul>
+		</nav>
+
+
 	</footer>
 	<script src="{{ .Site.BaseURL }}js/prism.js"></script>
 	<!-- math equations -->
