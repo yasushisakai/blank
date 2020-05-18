@@ -48,6 +48,12 @@ h2, #bibliography {
     border-left: 3px solid #000;
 }
 
+blockquote{
+    border-left: solid;
+    padding-left: 1em;
+    font-style: italic;
+}
+
 .title-item {
     padding-left: 2em;
 }
