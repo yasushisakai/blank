@@ -15,8 +15,9 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37457516-1"></script>
 
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+	<link rel="stylesheet"
+      href="{{ .Site.BaseURL }}css/nord.min.css">
+	<script src="{{ .Site.BaseURL }}js/highlight.js"></script>
 
 	<script>
 	 window.dataLayer = window.dataLayer || [];
@@ -26,13 +27,13 @@
 	 gtag('config', 'UA-37457516-1');
 
 	// init highlight
-		hljs.initHighlightingOnLoad();
+	hljs.initHighlightingOnLoad();
 	</script>
 
 	{{ .Hugo.Generator }}
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
-	<!--  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css"> -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/nord.min.css">
+
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
 
 </head>
 <body>

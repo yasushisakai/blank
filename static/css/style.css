@@ -21,7 +21,17 @@ img{
 }
 
 pre {
-    font-family: Hack;
+    padding: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+code {
+    font-size: 0.8em;
+    font-family: Hack, monospace;
+}
+
+.src-block-caption {
+    margin-top: 0.1em;
 }
 
 main {
