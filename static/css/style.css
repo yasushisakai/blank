@@ -3,6 +3,8 @@ body{
     margin-top: 10px;
     font-family: Helvetica, "游ゴシック Medium", YuGothic, YuGothicM;
     font-size: 0.9em;
+    line-height: 1.6em;
+    font-weight: lighter;
 }
 
 img{
